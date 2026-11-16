@@ -10,47 +10,47 @@ Simulação de ataque BruteForce em ambiente vulnerável\
 **1 - Baixar VirtualBox**\
 Link: https://www.virtualbox.org/wiki/Downloads\
 \
-**2 - Baixar a imagem do Kali Linux preparado para ambiente virtualizado**\
+**2 - Baixar a imagem do Kali Linux preparado para ambiente virtualizado** \
 Link: https://www.kali.org/get-kali/#kali-virtual-machines\
 \
-**3 - Baixar Metasploitable 2 através do site Rapid7 ou acessando o SourceForge**\
+**3 - Baixar Metasploitable 2 através do site Rapid7 ou acessando o SourceForge** \
 Link1: https://docs.rapid7.com/metasploit/metasploitable-2/ \
 Link2: https://sourceforge.net/projects/metasploitable/ \
 \
-**4 - Criar VM Kali Linux com o arquivo vbox já baixado**
-Após baixar na etapa 2, volte ao Virtual box e selecione a opção "open/abrir" e selecione o arquivo ".vbox". E siga as opções para configurar a VM
-Clique na máquina Kali listada, navegue até Configurações > Rede > Altere a opção "Connected to/Ligado a" para "Host Only / Placa de rede exclusiva de hospedeiro
-
-**5 - Criar VM Metasploitable 2 utlizando o arquivo de disco vmdk**
-Com o arquivo baixado na etapa 2, volte ao Virtual box e selecione a opção "new/novo" e configure a máquina com as opções
-VM Name: metasploitable-2
-OS: Linux
-OS Distribution: Ubuntu **IMPORTANTE: Se não configurar isso, a VM pode dar Kernel Panic ao iniciar**
-Vá até a ultima opção em "Create new virtual disk / Criar novo disco virtual" e selecione o disco ".vmdk" baixado.
-Navegue até Configurações > Rede > Altere a opção "Connected to/Ligado a" para "Host Only / Placa de rede exclusiva de hospedeiro
-
-**Iniciando as configurações e ataques**
-**6 Ligue as VMs**
-Acesse as máquinas com os usuários padrão de cada VM
-
-**Kali Linux**
-Usuário: kali
-Senha: kali
-
-**Metasploitable2**
-Usuário: msfadmin
-Senha: msfadmin
-
-**7 - Colete as informações de ip da máquina vulneravel**
-Na VM metasploitable2, execute o comando
-ip a
-Após esse comando o ip da máquina será informado (veja a pasta images se precisar de apoio "metasplitable1.jpg")
-Neste simulado a máquina estava com o IP 192.168.56.102
-
-**8 Enumeração com Kali**
-Acessando sua máquina Kali e com a informação do IP comece a realizar as primeiras configurações 
-Abra o terminal da máquina utilizando o conjunto de teclas (Ctrl + Alt + T)
-Antes de iniciar o teste de ataque verique se a máquina está acançável via comando ping 
+**4 - Criar VM Kali Linux com o arquivo vbox já baixado** \ 
+Após baixar na etapa 2, volte ao Virtual box e selecione a opção "open/abrir" e selecione o arquivo ".vbox". E siga as opções para configurar a VM\
+Clique na máquina Kali listada, navegue até Configurações > Rede > Altere a opção "Connected to/Ligado a" para "Host Only / Placa de rede exclusiva de hospedeiro\
+\
+**5 - Criar VM Metasploitable 2 utlizando o arquivo de disco vmdk**\
+Com o arquivo baixado na etapa 2, volte ao Virtual box e selecione a opção "new/novo" e configure a máquina com as opções\
+VM Name: metasploitable-2\
+OS: Linux\
+OS Distribution: Ubuntu **IMPORTANTE: Se não configurar isso, a VM pode dar Kernel Panic ao iniciar**\
+Vá até a ultima opção em "Create new virtual disk / Criar novo disco virtual" e selecione o disco ".vmdk" baixado.\
+Navegue até Configurações > Rede > Altere a opção "Connected to/Ligado a" para "Host Only / Placa de rede exclusiva de hospedeiro\
+\
+**Iniciando as configurações e ataques**\
+**6 Ligue as VMs**\
+Acesse as máquinas com os usuários padrão de cada VM\
+\
+**Kali Linux**\
+Usuário: kali\
+Senha: kali\
+\
+**Metasploitable2**\
+Usuário: msfadmin\
+Senha: msfadmin\
+\
+**7 - Colete as informações de ip da máquina vulneravel**\
+Na VM metasploitable2, execute o comando\
+"ip a"\
+Após esse comando o ip da máquina será informado (veja a pasta images se precisar de apoio "metasplitable1.jpg")\
+Neste simulado a máquina estava com o IP 192.168.56.102\
+\
+**8 Enumeração com Kali**\
+Acessando sua máquina Kali e com a informação do IP comece a realizar as primeiras configurações\
+Abra o terminal da máquina utilizando o conjunto de teclas (Ctrl + Alt + T)\
+Antes de iniciar o teste de ataque verique se a máquina está acançável via comando ping\
 "ping IP" / Nesse simulado o comando será "ping 192.168.56.102"
 Cancele o comando utilizando "Ctrl + C"
 
