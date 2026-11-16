@@ -1,4 +1,4 @@
-\*Desafio BruteForce DIO\*
+*Desafio BruteForce DIO*
 
 Criado ambiente virtualizado via VirtualBox
 Utilizando Kali (Medusa) + Metasploitable 2 (DVWA)
