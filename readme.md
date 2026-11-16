@@ -1,22 +1,22 @@
-**Desafio BruteForce DIO**
-
-Criado ambiente virtualizado via VirtualBox
-Utilizando Kali (Medusa) + Metasploitable 2 (DVWA)
-
-Simulação de ataque BruteForce em ambiente vulnerável
-
-**Etapas**
-**Configurando ambiente**
-**1 - Baixar VirtualBox**
-Link: https://www.virtualbox.org/wiki/Downloads
-
-**2 - Baixar a imagem do Kali Linux preparado para ambiente virtualizado**
-Link: https://www.kali.org/get-kali/#kali-virtual-machines
-
-**3 - Baixar Metasploitable 2 através do site Rapid7 ou acessando o SourceForge**
-Link1: https://docs.rapid7.com/metasploit/metasploitable-2/
-Link2: https://sourceforge.net/projects/metasploitable/
-
+**Desafio BruteForce DIO**\
+\
+Criado ambiente virtualizado via VirtualBox\
+Utilizando Kali (Medusa) + Metasploitable 2 (DVWA)\
+\
+Simulação de ataque BruteForce em ambiente vulnerável\
+\
+**Etapas**\
+**Configurando ambiente**\
+**1 - Baixar VirtualBox**\
+Link: https://www.virtualbox.org/wiki/Downloads\
+\
+**2 - Baixar a imagem do Kali Linux preparado para ambiente virtualizado**\
+Link: https://www.kali.org/get-kali/#kali-virtual-machines\
+\
+**3 - Baixar Metasploitable 2 através do site Rapid7 ou acessando o SourceForge**\
+Link1: https://docs.rapid7.com/metasploit/metasploitable-2/ \
+Link2: https://sourceforge.net/projects/metasploitable/ \
+\
 **4 - Criar VM Kali Linux com o arquivo vbox já baixado**
 Após baixar na etapa 2, volte ao Virtual box e selecione a opção "open/abrir" e selecione o arquivo ".vbox". E siga as opções para configurar a VM
 Clique na máquina Kali listada, navegue até Configurações > Rede > Altere a opção "Connected to/Ligado a" para "Host Only / Placa de rede exclusiva de hospedeiro
